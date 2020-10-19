@@ -24,7 +24,7 @@ default_logger_h = logging.handlers.RotatingFileHandler(
     'default.log', 'a', LOG_SIZE_MAX_BYTES, 10)
 default_logger_h.setLevel(logging.DEBUG)
 formatter = logging.Formatter(
-    "[%(asctime)s-%(name)s-%(funcName)s-%(levelname)8s]%(message)s")
+    "[%(asctime)s-%(levelname)s]:%(name)s:%(funcName)s:%(message)s")
 default_logger_h.setFormatter(formatter)
 
 root.addHandler(default_logger_h)
