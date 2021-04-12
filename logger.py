@@ -8,7 +8,8 @@ from collections import defaultdict as defaultdict
 SIZE_1KB = 1024
 SIZE_1MB = (1024 * SIZE_1KB)
 SIZE_10MB = (10 * SIZE_1MB)
-LOG_SIZE_MAX_BYTES = SIZE_1MB
+SIZE_1000MB = (100 * SIZE_1MB)
+LOG_SIZE_MAX_BYTES = SIZE_10MB
 
 logging.basicConfig(level=logging.DEBUG,
                     # format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
